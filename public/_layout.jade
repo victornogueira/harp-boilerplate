@@ -1,0 +1,25 @@
+doctype
+html(lang="en")
+  head
+    title= title
+    meta(charset='utf-8')
+    link(type="text/css", rel="stylesheet", href="/css/style.css")
+  body
+    .wrapper
+      header
+        h1 AJAX Test Page
+      nav
+        ul.bare-list
+          li
+            a(href='/', data-ajax='ajax') Home
+          li
+            a(href='about.html', data-ajax='ajax') About
+          li
+            a(href='contact.html', data-ajax='ajax') Contact
+      .page-load-wrapper
+        != yield
+      .footer This is the footer
+    
+    script(src="//ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js")
+    script(src="/vendor/greensock/TweenMax.min.js")
+    script(src="/js/main.js")

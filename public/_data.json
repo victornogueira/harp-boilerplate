@@ -1,0 +1,14 @@
+{
+  "index": {
+    "title": "Home",
+    "intro": "This is the content for home"
+  },
+  "about": {
+    "title": "About",
+    "intro": "This is the content for about"
+  },
+  "contact": {
+    "title": "Contact",
+    "intro": "This is the content for contact"
+  }
+}

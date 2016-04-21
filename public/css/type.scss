@@ -1,0 +1,69 @@
+@mixin heading-font($step, $scale) {
+  $font-size: modular-scale($step, $modular-scale-base, $scale);
+  font-size: $font-size;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin-bottom: 1rem;
+  margin-top: 0;
+}
+
+.heading-1 {
+  @include heading-font(1, $major-third);
+  
+  @include bp(medium) {
+    @include heading-font(1, $perfect-fourth);
+  }
+
+  @include bp(large) {
+    @include heading-font(1, $augmented-fourth);
+  }
+}
+
+.heading-2 {
+  @include heading-font(2, $major-third);
+
+  @include bp(medium) {
+    @include heading-font(2, $perfect-fourth);
+  }
+
+  @include bp(large) {
+    @include heading-font(2, $augmented-fourth);
+  }
+}
+
+.heading-3 {
+  @include heading-font(3, $major-third);
+
+  @include bp(medium) {
+    @include heading-font(3, $perfect-fourth);
+  }
+
+  @include bp(large) {
+    @include heading-font(3, $augmented-fourth);
+  }
+}
+
+.heading-4 {
+  @include heading-font(4, $major-third);
+
+  @include bp(medium) {
+    @include heading-font(4, $perfect-fourth);
+  }
+
+  @include bp(large) {
+    @include heading-font(4, $augmented-fourth);
+  }
+}
+
+.heading-5 {
+  @include heading-font(5, $major-third);
+
+  @include bp(medium) {
+    @include heading-font(5, $perfect-fourth);
+  }
+
+  @include bp(large) {
+    @include heading-font(5, $augmented-fourth);
+  }
+}
