@@ -1,0 +1,12 @@
+{
+  "name": "Harp-Gulp-And-BrowserSync",
+  "version": "0.0.1",
+  "description": "This is for my personal use",
+  "main": "gulpfile.js",
+  "author": "Victor Nogueira",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "harp": "^0.20.3",
+    "browser-sync": "^2.12.3"
+  }
+}
